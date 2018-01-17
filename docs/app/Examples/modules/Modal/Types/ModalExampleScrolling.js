@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button, Header, Icon, Image, Modal } from 'semantic-ui-react'
-
+import { stateOptions } from '../common'
 const ModalScrollingExample = () => (
   <Modal trigger={<Button>Long Modal</Button>}>
     <Modal.Header>Profile Picture</Modal.Header>
@@ -17,6 +17,7 @@ const ModalScrollingExample = () => (
         <Image src='/assets/images/wireframe/paragraph.png' />
         <Image src='/assets/images/wireframe/paragraph.png' />
         <Image src='/assets/images/wireframe/paragraph.png' />
+        <Dropdown placeholder='State' fluid multiple search selection options={stateOptions} />
       </Modal.Description>
     </Modal.Content>
     <Modal.Actions>
